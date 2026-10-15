@@ -2,8 +2,8 @@
 
 [![Validate](https://img.shields.io/badge/checks-local%20%2B%20CI-2ea44f?style=flat-square)](.github/workflows/validate.yml)
 [![Quality](https://img.shields.io/badge/Quality-HA%20QS%20Platinum%20Track-0366d6?style=flat-square)](custom_components/bticino_c300x/quality_scale.yaml)
-[![Release](https://img.shields.io/badge/release-v1.9.7-0366d6?style=flat-square)](CHANGELOG.md)
-[![HACS Default](https://img.shields.io/badge/HACS-Default-41BDF5.svg)](https://www.hacs.xyz/)
+[![Release](https://img.shields.io/badge/release-v1.9.8-0366d6?style=flat-square)](CHANGELOG.md)
+[![HACS Custom](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://www.hacs.xyz/)
 [![License Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](LICENSE)
 
 Local-first Home Assistant custom integration for the BTicino Classe 300X /
@@ -16,6 +16,16 @@ forwarding controls, messages and optional display pages.
 <p align="center">
   <img src="custom_components/bticino_c300x/brand/logo.png" alt="BTicino C300X integration logo" width="140">
 </p>
+
+## Minims HTTPS test release
+
+This fork adds HTTPS callbacks to the [upstream integration](https://github.com/memphi2/ha-bticino-c300x).
+Version **1.9.8** is a prerelease for testing. Add `Minims/ha-bticino-c300x`
+as a custom Integration repository in HACS and enable beta releases.
+Update both the integration and its bundled device agent (`1.9.8-https.1`).
+The native agent has been compiled for firmware 1.7.19 and checked against its
+libraries; HTTPS delivery on the physical device still needs validation.
+Do not install two copies of the `bticino_c300x` integration.
 
 ## What You Get
 
